@@ -29,33 +29,61 @@ FORM_HTML = dedent("""
         <style>
             .formulario{
                    
-            
-            text-align: center;
-            border-radius: 25px;
-            border-style: solid;
-            background-color: white;
-            padding: 30px;
-            max-width: 520px;
-            margin: 300px auto;
+                text-align: center;
+                border-radius: 25px;
+                border-style: 1px solid;
+                background-color: white;
+                padding: 30px;
+                max-width: 520px;
+                margin: 300px auto;
+                background: #17202a;
+                color: white;
                    }
+
+            input{
+                padding:8px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                
+                   }
+
+            select{
+                padding:5px;
+                width: 195px;
+                border-radius: 5px;
+                margin-bottom: 5px;
                    
+                   }
+
+            button{
+                margin-top: 3px;
+                border-radius: 5px;
+                padding: 2px;
+                width: 120px;
                    
-                   </style>
+                   }
+        </style>
     </head>
     <body>
         <section class="formulario" >
             <h1>Generador de perfiles profesionales</h1>
             <form action="/tarjeta" method="get">
-                <label>Nombre: <input name="nombre" required></label><br>
-                <label>Apellido: <input name="Apellido" required></label><br>
-                <label>Edad: <input name="Edad" required></label><br>
-                <label>Habilidad: <input name="Habilidad" required></label><br>
-                <label>Habilidad: <input name="Habilidad2" required></label><br>
-                <label>Habilidad: <input name="Habilidad3" required></label><br>
-                <label>Profesion/Ocupacion: <input name="Profesion/Ocupacion" required></label><br>
-                <label>Red Social: <input name="LinkedIn, instagram..."  required></label><br>
-                <label>Red Social: <input name="Red Social #2" required></label><br>   
-                <label>Foto de perfil: <input name="Url foto de perfil" required></label><br>
+                <input placeholder="Ingrese su nombre" name="nombre" required><br>
+                <input placeholder="Ingrese su apellido" name="Apellido" required><br>
+                <input placeholder="Ingrese su edad" name="Edad" required><br>
+                <select name="habilidades" id="habilidades" >
+                <option value="nego">Negociacion</option>
+                <option value="comu">Comunicacion</option>
+                <option value="escu">Escucha activa</option>
+                <option value="pens">Pensamiento critico</option>
+                <option value="crea">Creatividad</option>
+                <option value="lide">Liderazgo</option>
+                <option value="estra">Estrategia</option>
+                </select></label><br>
+                <input placeholder="Ingrese su ocupacion" name="Ocupacion" required><br>
+                <input placeholder="Ingrese su red social" name="LinkedIn, instagram..."  required><br>
+                <input placeholder="Ingrese su red social" name="Red Social #2" required><br>   
+                <input type = "url" placeholder="Ingrese su link de foto" name="Url foto de perfil" required><br>
                 <button>Crear tarjeta</button>
             </form>
         <section>
@@ -88,7 +116,7 @@ CARD_HTML = dedent("""
     </head>
     <body>
         <div class="card">
-            <h1>{nombre}</h1> <p>{apellido}</p>
+            <h1>{nombre} {apellido}</h1>
             <p>{edad} años</p>
             <p>{habilidad}</p>
                    
