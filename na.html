@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style></style>
+</head>
+<body>
+    <select name="habilidades" id="habilidades" >Elije 3 habilidades :0
+        <option value="nego">Negociacion</option>
+        <option value="comu">Comunicacion</option>
+        <option value="escu">Escucha activa</option>
+        <option value="pens">Pensamiento critico</option>
+        <option value="crea">Creatividad</option>
+        <option value="lide">Liderazgo</option>
+        <option value="estra">Estrategia</option>
+    </select><br>
+
+    <!--Lista multiples opciones Check box-->
+
+    <ul>
+        <li><input type="checkbox"   type="text">Negociacion</li>
+        <li><input type="checkbox"   type="text">Comunicacion</li>
+        <li><input type="checkbox"   type="text">Creatividad</li>
+        <li><input type="checkbox"   type="text">Liderazgo</li>
+        <li><input type="checkbox"   type="text">Escucha</li>
+        <li><input type="checkbox"   type="text">Estrategia</li>
+    </ul>
+
+     
+    <!--Fue el primero que hice ps el que estaba en la plantilla-->
+      <form action="/tarjeta" method="get">
+                <label>Nombre: <input name="nombre" required></label><br>
+                <label>Apellido: <input name="Apellido" required></label><br>
+                <label>Edad: <input name="Edad" required></label><br>
+                <label>Habilidad: <select name="habilidades" id="habilidades" >Elije 3 habilidades :0
+                <option value="nego">Negociacion</option>
+                <option value="comu">Comunicacion</option>
+                <option value="escu">Escucha activa</option>
+                <option value="pens">Pensamiento critico</option>
+                <option value="crea">Creatividad</option>
+                <option value="lide">Liderazgo</option>
+                <option value="estra">Estrategia</option>
+                </select></label><br>
+                <label>Ocupacion: <input name="Ocupacion" required></label><br>
+                <label>Red Social: <input name="LinkedIn, instagram..."  required></label><br>
+                <label>Red Social: <input name="Red Social #2" required></label><br>   
+                <label>Foto de perfil: <input name="Url foto de perfil" required></label><br>
+                <button>Crear tarjeta</button>
+            </form>
+
+
+            <!--la segunda que hice-->
+
+      <form action="/tarjeta" method="get">
+                <input placeholder="Ingrese su nombre" name="nombre" required><br>
+                <input placeholder="Ingrese su apellido" name="Apellido" required><br>
+                <input placeholder="Ingrese su edad" name="Edad" required><br>
+                <select name="habilidades" id="habilidades" >
+                <option value="nego">Negociacion</option>
+                <option value="comu">Comunicacion</option>
+                <option value="escu">Escucha activa</option>
+                <option value="pens">Pensamiento critico</option>
+                <option value="crea">Creatividad</option>
+                <option value="lide">Liderazgo</option>
+                <option value="estra">Estrategia</option>
+                </select></label><br>
+                <input placeholder="Ingrese su ocupacion" name="Ocupacion" required><br>
+                <input placeholder="Ingrese sured social" name="LinkedIn, instagram..."  required><br>
+                <input placeholder="Ingrese su red social" name="Red Social #2" required><br>   
+                <input placeholder="Ingrese su link de foto" name="Url foto de perfil" required><br>
+                <button>Crear tarjeta</button>
+            </form>
+
+</body>
+</html>

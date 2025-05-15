@@ -1,0 +1,35 @@
+/*.formulario{
+                   
+    text-align: center;
+    border-radius: 25px;
+    border-style: 1px solid;
+    background-color: white;
+    padding: 30px;
+    max-width: 520px;
+    margin: 300px auto;
+    background: #17202a;
+    color: white;
+        }
+
+input{
+    padding:8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+                
+        }
+
+select{
+    padding:5px;
+    width: 195px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+                   
+        }
+
+button{
+
+    margin-top: 5px;
+    border-radius: 2px;
+    padding: 2px;
+    width: 30px;
+}
